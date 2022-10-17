@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Responsive Redesign</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <!-- Nav Bar -->
+       <ul class="nav flex justify-content-between py-3 sticky top-0 bg-white z-50">
+            <div class="nav-item flex justify-center items-center mx-4">
+                <img src="./assets/sno-king-logo_large-1.png" class="hidden md:flex w-24 mx-4" />
+                <img src="./assets/menubutton.png" class="w-12 h-12 hover:cursor-pointer hover:border-2 border-black rounded" />
+            </div>
+            <div class="nav-item flex justify-evenly flex-row-reverse items-center md:mx-5">
+                <button class="rounded-xl text-white text-xl font-semibold bg-[#1F386D] hover:bg-[#02875A] p-3 mx-3">Learn to Play</button>
+                <div class="vertical"></div>
+                <img src="./assets/search.png" class="w-10 hover:cursor-pointer" />
+            </div>
+      </ul>
+
+      <!-- Body Page -->
+      <div class="m-0 bg-white">
+        <!-- Hero Image -->
+        <div id="Hero" class="mainImg bg-cover bg-center flex flex-col md:flex-row justify-around items-center px-5">
+            <h1 class="text-white font-extrabold text-3xl text-center md:text-5xl w-full md:w-2/5 my-5 md:my-0">LEARN TO PLAY HOCKEY</h1>
+            <div class="flex flex-col justify-center items-center py-3">
+                <button class="darkButton w-full my-4">LEARN TO PLAY HOCKEY</button>
+                <button class="darkButton w-full my-4">SNO-KING GIRLS PROGRAM</button>
+                <button class="darkButton w-full my-4">COOKIE DOUGH FUNDRAISER</button>
+            </div>
+        </div>
+        <!-- Learn to Play Programs -->
+        <div id="LearnToPlayPrograms" class="bg-[#1F386D] flex flex-col justify-start items-center py-5 font-bold text-4xl text-white">
+            <h2 class="text-white font-bold text-4xl text-center">LEARN TO PLAY PROGRAMS</h2>
+            <div class="flex flex-row justify-evenly mx-4 mt-5 mb-4">
+                <div class="flex-col justify-between items-center hidden lg:flex">
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Inside Edge Newsletter</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Safety & Safesport</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Bylaws and Policies</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Become a Volunteer</button>
+                </div>
+                <img src="./assets/minner.png" class="w-80 hover:cursor-pointer mx-5" alt="Embedded iframe of Snoking Hockey's Learn to Play Video" />
+                <div class="flex-col justify-between items-center hidden lg:flex">
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Resources</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Teams</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Programs</button>
+                    <button class="lightButton text-base lg:text-xl w-60 xl:w-80 py-3">Event Calendar</button>
+                </div>
+            </div>
+            <div>
+                <button class="lightButton text-xl lg:hidden w-60 py-3">LEARN MORE</button>
+            </div>
+        </div>
+        <!-- Who We Are -->
+        <div id="WhoWeAre" class="flex flex-col md:flex-row justify-around items-center bg-white p-5">
+            <div class="flex flex-col justify-evenly items-center md:items-start w-4/5 md:w-2/5">
+                <h2 class="text-[#1F386D] font-bold text-4xl text-center md:text-left">WHO WE ARE</h2>
+                <p class="text-[#1F386D] font-normal text-base py-5">
+                    We at Sno-King Hockey want to stay connected to our Alumni whether you were a player (youth or adult), 
+                    parent, coach, board member, or volunteer please complete our alumni registration to be included in any 
+                    news or upcoming events.
+                </p>
+                <button class="darkButton w-3/4 text-base font-medium my-2">Alumni Login</button>
+            </div>
+            <div class="w-4/5 md:w-2/5 my-4 md:my-0">
+                <img src="./assets/jamiehuscroft.png" class="w-full hover:cursor-pointer" alt="embedded iframe of Snoking Hockey's Who Are We promo video" />
+            </div>
+        </div>
+        <!-- News -->
+        <div id="News" class="bg-[#1F386D] flex flex-col justify-center items-center py-5">
+            <div class="flex flex-row justify-start items-center w-5/6">
+                <h2 class="text-white font-bold text-4xl">News</h2>
+            </div>
+            <div class="flex flex-col justify-center items-center w-5/6 px-5 py-4 bg-white my-5">
+                <div class="newsFrame w-full hover:cursor-pointer">
+                    <img src="./assets/girlshockey.jpg" class="w-full h-96" />
+                    <div class="p-4">
+                        <h1 class="text-[#1F386D] font-bold text-4xl">Girls Hockey Weekend</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between w-full items-center py-4">
+                    <div class="newsFrame w-full md:w-1/2 my-3 md:mr-3 hover:cursor-pointer">
+                        <img src="./assets/newletter.jpg" class="w-full h-64" />
+                        <div class="p-4 h-32">
+                            <h1 class="text-[#1F386D] font-bold text-2xl">Inside Edge Monthly Newsletter: Get your game on!</h1>
+                        </div>
+                    </div>
+                    <div class="newsFrame w-full md:w-1/2 my-3 md:ml-3 hover:cursor-pointer">
+                        <img src="./assets/tryouts.png" class="w-full h-64" />
+                        <div class="p-4 h-32">
+                            <h1 class="text-[#1F386D] font-bold text-2xl">8U-18U REC pre-season and evaluation schedule now posted</h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="darkButton px-16 text-xl md:text-3xl">Read All</button>
+            </div>
+        </div>
+        <!-- Sponsors -->
+        <div id="Sponsors" class="scrolling-wrapper">
+            <div class="sponsor">
+                <img src="./assets/sponsors/sponsorVM.png" class="hover:cursor-pointer" />
+            </div>
+            <div class="sponsor">
+                <img src="./assets/sponsors/sponsorPNAHA.png" class="hover:cursor-pointer" />
+            </div>
+            <div class="sponsor">
+                <img src="./assets/sponsors/sponsorADM.png" class="hover:cursor-pointer" />
+            </div>
+            <div class="sponsor">
+                <img src="./assets/sponsors/SponsorMHL.png" class="hover:cursor-pointer" />
+            </div>
+            <div class="sponsor">
+                <img src="./assets/sponsors/sponsorshirt.png" class="hover:cursor-pointer" />
+            </div>
+            <div class="sponsor">
+                <img src="./assets/sponsors/sponsorCV.png" class="hover:cursor-pointer" />
+            </div>
+        </div>
+        <!-- End Banner -->
+        <div id="EndBanner" class="bg-[#1F386D] flex flex-col md:flex-row justify-evenly items-center md:items-start py-5">
+            <div class="my-2">
+                <img src="./assets/sno-king-logo_large-1.png" class="w-56" />
+            </div>
+            <div class="flex flex-col justify-start items-center my-2">
+                <h2 class="text-white font-bold text-lg">ASSOCIATION</h2>
+                <ul class="text-white font-medium text-normal my-1.5 text-center">
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">ABOUT US</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">STAFF</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">RESOURCES</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">TEAMS</li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-start items-center my-2">
+                <h2 class="text-white font-bold text-lg">PROGRAMS</h2>
+                <ul class="text-white font-medium text-normal my-1.5 text-center">
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">NEW TO HOCKEY</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">YOUTH PROGRAMS</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">REGISTRATION</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">TRYOUTS</li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-start items-center grow-0 basis-1/5 my-2">
+                <h2 class="text-white font-bold text-lg">CONTACT US</h2>
+                <ul class="text-white font-medium text-normal my-1.5 text-center">
+                    <li class="py-1.5">14326 124TH AVE NE</li>
+                    <li class="py-1.5">KIRKLAND, WA 98034</li>
+                    <li class="py-1.5">(425)821-7133</li>
+                    <li class="py-1.5 hover:cursor-pointer hover:underline">OFFICE@SNOKINGHOCKEY.COM</li>
+                    <li class="py-1.5">FOR ALL PR OR MEDIA INQUIRIES, PLEASE CONTACT OUR MARKETING & DEVELOPMENT DIRECTOR, WENDY ROGERS AT WENDY.ROGERS@SNOKINGICE.COM</li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-start items-center my-2">
+                <h2 class="text-white font-bold text-lg hover:cursor-pointer">LEARN TO PLAY</h2>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
